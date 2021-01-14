@@ -2,11 +2,16 @@ import React from 'react';
 
 import 'bulma/css/bulma.css'
 
-import '../App.css'
+import '../Contact.css'
 
 const Contact =()=>{
     return(
-<form method='POST'>
+       
+
+
+<div className="container is-fluid">
+  <div className="notification first ">
+  <form method='POST'>
   <div className="field">
     <label className="label">Name</label>
     <div className="control">
@@ -76,6 +81,12 @@ const Contact =()=>{
     </div>
   </div>
 </form>
+  </div>
+</div>
+
+
+
+
 
 
     
