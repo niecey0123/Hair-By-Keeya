@@ -2,10 +2,7 @@
   "name": "hair_by_keeya",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "12.x",
-    "npm": "6"
-  },
+ 
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
