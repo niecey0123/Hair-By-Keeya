@@ -7,7 +7,7 @@ const Home =() =>{
     return(
         <div>
         <div>
-        <img className="ui fluid image" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/stitch-braid-and-coils-1510248084.jpg" width="100%" height="510px"/>
+        <img className="ui fluid image" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/stitch-braid-and-coils-1510248084.jpg" alt='hair model' width="100%" height="510px"/>
         </div>
 {/* 
      
