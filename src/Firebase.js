@@ -4,6 +4,7 @@ var firebaseApp =firebase.initializeApp({
  
         apiKey: "AIzaSyBveUzeHRNEepP0YUqILdoAuIIb9rEbhi0",
         authDomain: "hair-by-keeya-3f847.firebaseapp.com",
+        databaseURL:"https://hairbk-1e06f-default-rtdb.firebaseio.com/",
         projectId: "hair-by-keeya-3f847",
         storageBucket: "hair-by-keeya-3f847.appspot.com",
         messagingSenderId: "241469590971",

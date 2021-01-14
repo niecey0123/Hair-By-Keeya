@@ -14,8 +14,8 @@ const Contact =()=>{
 
 
 
-  const handleSubmit = (e)=>{
-    e.preventDefault();
+  const handleSubmit = ()=>{
+    // e.preventDefault();
     db.collection('contacts').add({
       name:name,
       email:email,
