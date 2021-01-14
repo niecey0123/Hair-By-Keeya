@@ -1,10 +1,41 @@
-import React from 'react';
-
+import React, { useState } from 'react';
+import {db} from '../Firebase'
 import 'bulma/css/bulma.css'
 
 import '../Contact.css'
 
 const Contact =()=>{
+
+  const {name, setName} = useState("")
+  const {email, setEmail} = useState("")
+  const {message, setMessage} = useState("")
+  const {number, setNumber} = useState("")
+  const {subject, setSubject} = useState("")
+
+
+
+  const handleSubmit = (e)=>{
+    e.preventDefault();
+    db.collection('contacts').add({
+      name:name,
+      email:email,
+      message:message,
+      number:number,
+      subject:subject
+    })
+    .then(()=>{
+      alert("Message has been Sumbitted" )
+    })
+    .catch(error =>{
+      alert(error.message)
+    })
+
+    setName("");
+    setEmail("");
+    setNumber("");
+    setMessage("");
+    setSubject("");
+  }
     return(
        
 
@@ -12,24 +43,24 @@ const Contact =()=>{
 
 <div className="container column is-fluid">
   <div className="notification first ">
-  <form method='POST'>
+  <form method='POST' onSubmit={handleSubmit()}>
   <div className="field">
     <label className="label">Name</label>
     <div className="control">
-      <input className="input" type="text" placeholder="Stacy Williams" />
+      <input className="input" value="name" onChange={(e)=>setName(e.target.value)} type="text" placeholder="Stacy Williams" />
     </div>
   </div>
   <div className="field">
     <label className="label">Phone Number</label>
     <div className="control ">
-      <input className="input" type="text" placeholder="000-000-0000"  />
+      <input className="input" value="number" onChange={(e)=>setNumber(e.target.value)} type="text" placeholder="000-000-0000"  />
       
     </div>
   </div>
   <div className="field">
     <label className="label">Email</label>
     <div className="control ">
-      <input className="input" type="email" placeholder="stacy123@gmail.com" />
+      <input className="input"value="email" onChange={(e)=>setEmail(e.target.value)} type="email" placeholder="stacy123@gmail.com" />
     
     </div>
 
@@ -38,9 +69,9 @@ const Contact =()=>{
     <label className="label">Subject</label>
     <div className="control">
       <div className="select">
-        <select>
-          <option>Book Appointment</option>
-          <option>Reschedule Appointment</option>
+        <select value="subject" onChange={(e)=> setSubject(e.target.value)}>
+          <option value="book">Book Appointment</option>
+          <option value="resched">Reschedule Appointment</option>
 
         </select>
       </div>
@@ -49,7 +80,7 @@ const Contact =()=>{
   <div className="field">
     <label className="label">Message</label>
     <div className="control">
-      <textarea className="textarea" placeholder="Textarea" defaultValue={""} />
+      <textarea className="textarea" value="message" onChange={(e)=>setMessage(e.target.value)}placeholder="Textarea" defaultValue={""} />
     </div>
   </div>
   <div className="field">
