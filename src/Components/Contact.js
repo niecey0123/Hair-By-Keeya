@@ -15,31 +15,21 @@ const Contact =()=>{
   <div className="field">
     <label className="label">Name</label>
     <div className="control">
-      <input className="input" type="text" placeholder="Text input" />
+      <input className="input" type="text" placeholder="Stacy Williams" />
     </div>
   </div>
   <div className="field">
     <label className="label">Phone Number</label>
-    <div className="control has-icons-left has-icons-right">
-      <input className="input" type="text" placeholder="Text input" defaultValue="bulma" />
-      <span className="icon is-small is-left">
-        <i className="fas fa-user" />
-      </span>
-      <span className="icon is-small is-right">
-        <i className="fas fa-check" />
-      </span>
+    <div className="control ">
+      <input className="input" type="text" placeholder="000-000-0000"  />
+      
     </div>
   </div>
   <div className="field">
     <label className="label">Email</label>
-    <div className="control has-icons-left has-icons-right">
-      <input className="input" type="email" placeholder="ex 'john123@gmaol.com'" />
-      <span className="icon is-small is-left">
-        <i className="fas fa-envelope" />
-      </span>
-      <span className="icon is-small is-right">
-        <i className="fas fa-exclamation-triangle" />
-      </span>
+    <div className="control ">
+      <input className="input" type="email" placeholder="stacy123@gmail.com" />
+    
     </div>
 
   </div>
