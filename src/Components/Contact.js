@@ -8,8 +8,9 @@ const Contact =()=>{
     return(
        
 
+<div className="columns is-mobile">
 
-<div className="container is-fluid">
+<div className="container column is-fluid">
   <div className="notification first ">
   <form method='POST'>
   <div className="field">
@@ -75,7 +76,7 @@ const Contact =()=>{
 </div>
 
 
-
+</div>
 
 
 
