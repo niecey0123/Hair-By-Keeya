@@ -1,1 +1,24 @@
 
+.list-group-horizontal{
+    color: black;
+}
+
+.price{
+    color: red;
+}
+
+.d-block{
+    height:650px;
+}
+
+.figure-caption{
+    font-family: 'Bad Script', cursive;
+    font-weight: bold;
+    font-size: 15pt;
+    text-align: center;
+
+}
+.featured{
+    font-family: 'Bad Script', cursive;
+    margin-left:35%;
+}

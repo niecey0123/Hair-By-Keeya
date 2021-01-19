@@ -20,7 +20,7 @@
     width: 500px;
     height: 400px;
     margin-left: 10%;
-    margin-top: 15%;
+    margin-top: 3%;
   }
   
   .label{
@@ -29,3 +29,21 @@
   .checkbox{
       color: aqua;
   }
+  .contact-title{
+      font-family: 'Bad Script', cursive;
+      background: -webkit-linear-gradient(rgb(247, 243, 15), rgb(238, 112, 9));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 70pt;
+      margin-top: 2%;
+      margin-left: 3%;
+  }
+  .contact-title2{
+    font-family: 'Bad Script', cursive;
+    background: -webkit-linear-gradient( rgb(238, 112, 9),rgb(247, 243, 15));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 70pt;
+    margin-left: 25%;
+
+}
