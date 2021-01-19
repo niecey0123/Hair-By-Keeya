@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {db} from '../firebase'
+import {db} from '../firebase.js'
 import 'bulma/css/bulma.css'
 import emailjs from 'emailjs-com'
 import '../Contact.css'
